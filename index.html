@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-color: #ccc;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calculadora {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .espaco-operacoes {
+        height: 70px;
+        /* background-color: #ededed; */
+        border-radius: 5px;
+    }
+
+    .numeros-e-operadores {
+        height: 330px;
+    }
+
+    .numeros {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .linhas {
+        padding: 2px;
+        color: aqua;
+    }
+
+    .numero {
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        height: 60px;
+        width: 60px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .operador {
+        font-family: 'Poppins', sans-serif;
+        color: rgb(26, 159, 236);
+    }
+
+    .numero:hover {
+        background-color: #ccc;
+
+    }
+
+    .igual {
+        width: 120px;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+
+        <div class="calculadora">
+            <div class="espaco-operacoes">
+
+            </div>
+            <div class="numeros-e-operadores">
+                <div class="numeros ">
+
+                    <div class="linhas">
+                        <button class="numero operador">AC</button>
+
+                        <button class="numero operador">DEL</button>
+
+                        <button class="numero operador">%</button>
+
+                        <button class="numero operador" >/</button>
+                    </div>
+
+                    <div class="linhas">
+                        <button class="numero">7</button>
+
+                        <button class="numero">8</button>
+
+                        <button class="numero">9</button>
+
+                        <button class="numero operador">*</button>
+                    </div>
+
+                    <div class="linhas">
+                        <button class="numero">4</button>
+
+                        <button class="numero">5</button>
+
+                        <button class="numero">6</button>
+
+                        <button class="numero operador">-</button>
+                    </div>
+
+
+                    <div class="linhas">
+                        <button class="numero">1</button>
+
+                        <button class="numero">2</button>
+
+                        <button class="numero">3</button>
+
+                        <button class="numero operador">+</button>
+                    </div>
+
+                    <div class="linhas">
+                        <button class="numero">0</button>
+
+                        <button class="numero">.</button>
+
+                        <!-- <button class="numero operador">+</button> -->
+
+                        <button class="numero operador igual">=</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
