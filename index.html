@@ -19,9 +19,9 @@
     }
 
     .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        /* position relative para q o elemento filho seja posicionado em relação a ele */
+        position: relative;
+        height: 100vh;
     }
 
     .calculadora {
@@ -29,6 +29,15 @@
         padding: 10px;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+        /* posição absoluta em relação ao elemento pai, nao a o vp do nav
+        * receita de bolo para centralizar div com position e facilitar responsividade (neste caso em especifio, é importante sempre se atentar ao objetivo da aplicação desenvolvida, dependendo, utiizar grid e flexbox são melhores opções)
+        * DIV ficará centralizada independente do tamanho da tela 
+        */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .espaco-operacoes {
@@ -94,7 +103,7 @@
 
                         <button class="numero operador">%</button>
 
-                        <button class="numero operador" >/</button>
+                        <button class="numero operador">/</button>
                     </div>
 
                     <div class="linhas">
